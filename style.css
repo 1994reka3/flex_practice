@@ -3,7 +3,8 @@
   height: 50vh;
   padding: 10px;
   display: flex;
-  flex-flow: row wrap;
+  justify-content: flex-end;
+  flex-direction: row;
   align-items: center;
 }
 .flex > div {
@@ -11,16 +12,6 @@
   margin: 5px;
   font-size: 30px;
 }
-
-.flex > div:nth-child(1) {
-  order: 3;
-}
-.flex > div:nth-child(2) {
-  order: 4;
-}
-.flex > div:nth-child(3) {
-  order: 2;
-}
-.flex > div:nth-child(4) {
-  order: 1;
+.flex > :first-child{
+  margin-right: auto;
 }
